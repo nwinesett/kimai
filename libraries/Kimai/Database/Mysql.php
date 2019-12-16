@@ -2770,7 +2770,6 @@ class Kimai_Database_Mysql
                     . (count($whereClauses) > 0 ? ' WHERE ' : ' ') . implode(' AND ', $whereClauses) .
                     ' GROUP BY `aggrDate`, `projectID`, `activityID`, `rate`, `fixedRate`' .
                     ' ORDER BY `start` ' . ($reverse_order ? 'ASC ' : 'DESC ') . $limit . ';';
-
         } else {
             $select = 'SELECT timeSheet.*, 
                 status.status,
