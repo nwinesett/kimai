@@ -4,7 +4,7 @@ deployment:
  - export DEPLOYPATH=/home/averywh0/public_html/awwlegal.com/billing
  - /bin/cp -R /home/averywh0/repositories/kimai/* $DEPLOYPATH
  - /bin/rm -R $DEPLOYPATH/installer/
- - export DEPLOYPATH=/home/averywh0/public_html/project
+ - export DEPLOYPATH2=/home/averywh0/public_html/project
  - /bin/cp -R /home/averywh0/repositories/kimai/* $DEPLOYPATH2
  - /bin/rm -R $DEPLOYPATH2/installer/
 #- export DEPLOYPATH2=/home/averywh0/public_html/WEBSITELOCATION
