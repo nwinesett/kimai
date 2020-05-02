@@ -13,3 +13,13 @@ deployment:
 #cPanel's Git Version Control and automatically deploy the changes
 #to the website.  When I have multiple installations, I can use
 #one repository to deploy to multiple websites using multiple DEPLOYPATHs
+#NOTE:  The "cp -R" is more of a merger.  The command copies all files
+# from the repository and replaces files that exist with the same name.  
+#However, it does NOT delete files that exist in the destination if the 
+#source does not contain a file with the same name and path.  Therefore, 
+#custom invoice templates with their own name are not deleted, but if you
+#modify the default templates of the program (e.g. long.odt) in the 
+#destination, they are replaced with the files from the repository.
+#Your custom invoice template may contain information that you do not
+#want to be public.  As such, you cannot store it on your public
+#repository and must add it directly to your destination separately.
